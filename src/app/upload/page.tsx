@@ -1,19 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { GRADUATES } from "@/lib/constants";
 import { slugify } from "@/lib/utils";
 
-const EMPLOYEES = [
-    "Arya Ngurah Intaran",
-    "Nama Lengkap 2",
-    "Nama Lengkap 3",
-    "Nama Lengkap 4",
-    "Nama Lengkap 5",
-    "Nama Lengkap 6",
-    "Nama Lengkap 7",
-    "Nama Lengkap 8",
-    "Nama Lengkap 9",
-]; // TODO: Import this from a shared source or keep synced
+
 
 export default function UploadPage() {
     const [selectedName, setSelectedName] = useState("");
@@ -91,7 +82,7 @@ export default function UploadPage() {
                         className="w-full px-4 py-3 bg-black/50 border border-white/20 rounded-lg focus:outline-none focus:border-yellow-500"
                     >
                         <option value="">-- Pilih Nama --</option>
-                        {EMPLOYEES.map((name) => (
+                        {GRADUATES.map((name) => (
                             <option key={name} value={name}>
                                 {name}
                             </option>

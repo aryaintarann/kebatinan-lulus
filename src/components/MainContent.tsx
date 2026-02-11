@@ -7,17 +7,7 @@ import AuroraBackground from "@/components/AuroraBackground";
 
 import { slugify } from "@/lib/utils";
 
-const GRADUATES = [
-    "Arya Ngurah Intaran",
-    "IKomang Aditiya Mas Wirawan",
-    "Putu Dharma Prima Andika",
-    "I Made Wahyu Adi Putra",
-    "I Made Fadli Marantika",
-    "Yoga Pradana",
-    "Isa Rohmadan",
-    "Jose Inacio Savio Dias Da Costa",
-    "I Komang Supta Karuna Putra",
-];
+import { GRADUATES } from "@/lib/constants";
 
 const CLOUDINARY_CLOUD_NAME = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;
 
